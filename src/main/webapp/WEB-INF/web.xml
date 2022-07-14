@@ -2,4 +2,24 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
          version="5.0">
 
+    <!-- DB 연결 값 -->
+    <context-param>
+        <param-name>jdbcUrl</param-name>
+        <param-value>${DATABASE_URL}</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>driverClassName</param-name>
+        <param-value>${DRIVER_CLASS_NAME}</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>dbUsername</param-name>
+        <param-value>${DB_USERNAME}</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>dbPassword</param-name>
+        <param-value>${DB_PASSWORD}</param-value>
+    </context-param>
 </web-app>
